@@ -1,0 +1,30 @@
+{
+  "name": "05_e-reader_peterpan",
+  "version": "1.0.0",
+  "description": "E-book reader for Peter Pan",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "json": "json-server --watch content/PeterAndWendy_JMBarrie.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroERosa/05_e-reader_PeterPan.git"
+  },
+  "author": "Pedro Rosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroERosa/05_e-reader_PeterPan/issues"
+  },
+  "homepage": "https://github.com/PedroERosa/05_e-reader_PeterPan#readme",
+  "devDependencies": {
+    "@eslint/css": "0.6.0",
+    "@eslint/js": "9.24.0",
+    "@eslint/json": "0.11.0",
+    "eslint": "9.24.0",
+    "json-server": "0.17.4",
+    "globals": "16.0.0"
+  },
+  "dependencies": {
+  }
+}

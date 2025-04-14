@@ -19,7 +19,24 @@ let isNavOpen = false;
 
     }
 
+    //let content;
+
+    /*async function getContent () {
+        content = await fetch("https://raw.githubusercontent.com/PedroERosa/05_e-reader_PeterPan/refs/heads/main/content/PeterAndWendy_JMBarrie.json");
+    }*/
+
+    async function updateBookChapter (chapterNumber) {
+        const busca = await fetch("https://raw.githubusercontent.com/PedroERosa/05_e-reader_PeterPan/refs/heads/main/content/PeterAndWendy_JMBarrie.json");
+        const content = await busca.json();
+        console.log(content);
+        console.log(content.chapter[chapterNumber]);
+    }
+
+
 $(document).ready(function() {
+
+    //getContent ();
+    updateBookChapter (0);
 
     //Getscroll percentage of div
 
@@ -64,20 +81,6 @@ $(document).ready(function() {
         }
 
     })
-
-    let book;
-
-    async function fetchJsonData() {
-        const data = await $.getJSON('../content/PeterAndWendy_JMBarrie.json');
-        return data;
-    };
-
-    console.log(JSON.parse(fetchJsonData()).book);
-
-
-
-
-
 
     //const contentBook = JSON.parse(book);
 
