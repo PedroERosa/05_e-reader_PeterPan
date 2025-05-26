@@ -1,3 +1,12 @@
+/*TITLE FONTS ------------------------------------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'Maragsa';
+    src: url('../fonts/Maragsâ.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 /*REGULAR FONTS ------------------------------------------------------------------------------------------------------------*/
 
 @font-face {
@@ -50,3 +59,52 @@
 }
 
 /*ITALIC FONTS ------------------------------------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'Crimson Pro';
+    src: url('../fonts/CrimsonPro-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Crimson Pro';
+    src: url('../fonts/CrimsonPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Crimson Pro';
+    src: url('../fonts/CrimsonPro-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Crimson Pro';
+    src: url('../fonts/CrimsonPro-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Crimson Pro';
+    src: url('../fonts/CrimsonPro-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Crimson Pro';
+    src: url('../fonts/CrimsonPro-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Crimson Pro';
+    src: url('../fonts/CrimsonPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}

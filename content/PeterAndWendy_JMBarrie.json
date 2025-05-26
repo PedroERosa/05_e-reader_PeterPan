@@ -2,11 +2,7 @@
   "book": {
     "bookTitle": "Peter and Wendy",
     "author": "James Matthew Barrie",
-    "intro": [
-      "!IMG icover.jpg",
-    "!IMG i005.jpg",
-    "!IMG i006.jpg"
-  ],
+    "intro": ["!IMG icover.jpg", "!IMG i005.jpg", "!IMG i006.jpg"],
     "chapter": [
       {
         "chapterNumber": "CHAPTER I",
@@ -62,21 +58,14 @@
           "It was something for Michael, who on his birthday was getting into shirts. The fire was warm, however, and the nursery dimly lit by three night-lights, and presently the sewing lay on Mrs. Darling's lap. Then her head nodded, oh, so gracefully. She was asleep. Look at the four of them, Wendy and Michael over there, John here, and Mrs. Darling by the fire. There should have been a fourth night-light.",
           "While she slept she had a dream. She dreamt that the Neverland had come too near and that a strange boy had broken through from it. He did not alarm her, for she thought she had seen him before in the faces of many women who have no children. Perhaps he is to be found in the faces of some mothers also. But in her dream he had rent the film that obscures the Neverland, and she saw Wendy and John and Michael peeping through the gap.",
           "The dream by itself would have been a trifle, but while she was dreaming the window of the nursery blew open, and a boy did drop on the floor. He was accompanied by a strange light, no bigger than your fist, which darted about the room like a living thing; and I think it must have been this light that wakened Mrs. Darling.",
-          "She started up with a cry, and saw the boy, and somehow she knew at once that he was Peter Pan. If you or I or Wendy had been there we should have seen that he was very like Mrs. Darling's kiss. He was a lovely boy, clad in skeleton leaves and the juices that ooze out of trees; but the most entrancing thing about him was that he had all his first teeth. When he saw she was a grown-up, he gnashed the little pearls at her.",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
+          "She started up with a cry, and saw the boy, and somehow she knew at once that he was Peter Pan. If you or I or Wendy had been there we should have seen that he was very like Mrs. Darling's kiss. He was a lovely boy, clad in skeleton leaves and the juices that ooze out of trees; but the most entrancing thing about him was that he had all his first teeth. When he saw she was a grown-up, he gnashed the little pearls at her."
         ]
       },
       {
         "chapterNumber": "CHAPTER II",
         "chapterName": "THE SHADOW",
         "text": [
-            "Mrs. Darling screamed, and, as if in answer to a bell, the door opened, and Nana entered, returned from her evening out. She growled and sprang at the boy, who leapt lightly through the window. Again Mrs. Darling screamed, this time in distress for him, for she thought he was killed, and she ran down into the street to look for his little body, but it was not there; and she looked up, and in the black night she could see nothing but what she thought was a shooting star.",
+          "Mrs. Darling screamed, and, as if in answer to a bell, the door opened, and Nana entered, returned from her evening out. She growled and sprang at the boy, who leapt lightly through the window. Again Mrs. Darling screamed, this time in distress for him, for she thought he was killed, and she ran down into the street to look for his little body, but it was not there; and she looked up, and in the black night she could see nothing but what she thought was a shooting star.",
           "She returned to the nursery, and found Nana with something in her mouth, which proved to be the boy's shadow. As he leapt at the window Nana had closed it quickly, too late to catch him, but his shadow had not had time to get out; slam went the window and snapped it off.",
           "You may be sure Mrs. Darling examined the shadow carefully, but it was quite the ordinary kind.",
           "Nana had no doubt of what was the best thing to do with this shadow. She hung it out at the window, meaning 'He is sure to come back for it; let us put it where he can get it easily without disturbing the children.'",
@@ -188,7 +177,7 @@
         "chapterName": "COME AWAY, COME AWAY!",
 
         "text": [
-            "For a moment after Mr. and Mrs. Darling left the house the night-lights by the beds of the three children continued to burn clearly. They were awfully nice little night-lights, and one cannot help wishing that they could have kept awake to see Peter; but Wendy's light blinked and gave such a yawn that the other two yawned also, and before they could close their mouths all the three went out.",
+          "For a moment after Mr. and Mrs. Darling left the house the night-lights by the beds of the three children continued to burn clearly. They were awfully nice little night-lights, and one cannot help wishing that they could have kept awake to see Peter; but Wendy's light blinked and gave such a yawn that the other two yawned also, and before they could close their mouths all the three went out.",
           "There was another light in the room now, a thousand times brighter than the night-lights, and in the time we have taken to say this, it has been in all the drawers in the nursery, looking for Peter's shadow, rummaged the wardrobe and turned every pocket inside out. It was not really a light; it made this light by flashing about so quickly, but when it came to rest for a second you saw it was a fairy, no longer than your hand, but still growing. It was a girl called Tinker Bell exquisitely gowned in a skeleton leaf, cut low and square, through which her figure could be seen to the best advantage. She was slightly inclined to <i>embonpoint</i>.",
           "A moment after the fairy's entrance the window was blown open by the breathing of the little stars, and Peter dropped in. He had carried Tinker Bell part of the way, and his hand was still messy with the fairy dust.",
           "'Tinker Bell,' he called softly, after making sure that the children were asleep, 'Tink, where are you?' She was in a jug for the moment, and liking it extremely; she had never been in a jug before.",
@@ -383,7 +372,7 @@
         "chapterNumber": "CHAPTER IV",
         "chapterName": "THE FLIGHT",
         "text": [
-            "'Second to the right, and straight on till morning.'",
+          "'Second to the right, and straight on till morning.'",
           "That, Peter had told Wendy, was the way to the Neverland; but even birds, carrying maps and consulting them at windy corners, could not have sighted it with these instructions. Peter, you see, just said anything that came into his head.",
           "At first his companions trusted him implicitly, and so great were the delights of flying that they wasted time circling round church spires or any other tall objects on the way that took their fancy.",
           "John and Michael raced, Michael getting a start.",
@@ -520,7 +509,7 @@
         "chapterNumber": "CHAPTER V",
         "chapterName": "THE ISLAND COME TRUE",
         "text": [
-            "Feeling that Peter was on his way back, the Neverland had again woke into life. We ought to use the pluperfect and say wakened, but woke is better and was always used by Peter.",
+          "Feeling that Peter was on his way back, the Neverland had again woke into life. We ought to use the pluperfect and say wakened, but woke is better and was always used by Peter.",
           "In his absence things are usually quiet on the island. The fairies take an hour longer in the morning, the beasts attend to their young, the redskins feed heavily for six days and nights, and when pirates and lost boys meet they merely bite their thumbs at each other. But with the coming of Peter, who hates lethargy, they are all under way again: if you put your ear to the ground now, you would hear the whole island seething with life.",
           "On this evening the chief forces of the island were disposed as follows. The lost boys were out looking for Peter, the pirates were out looking for the lost boys, the redskins were out looking for the pirates, and the beasts were out looking for the redskins. They were going round and round the island, but they did not meet because all were going at the same rate.",
           "All wanted blood except the boys, who liked it as a rule, but to-night were out to greet their captain. The boys on the island vary, of course, in numbers, according as they get killed and so on; and when they seem to be growing up, which is against the rules, Peter thins them out; but at this time there were six of them, counting the twins as two. Let us pretend to lie here among the sugar-cane and watch them as they steal by in single file, each with his hand on his dagger.",
@@ -612,7 +601,7 @@
         "chapterNumber": "CHAPTER VI",
         "chapterName": "THE LITTLE HOUSE",
         "text": [
-            "Foolish Tootles was standing like a conqueror over Wendy's body when the other boys sprang, armed, from their trees.",
+          "Foolish Tootles was standing like a conqueror over Wendy's body when the other boys sprang, armed, from their trees.",
           "'You are too late,' he cried proudly, 'I have shot the Wendy. Peter will be so pleased with me.'",
           "Overhead Tinker Bell shouted 'Silly ass!' and darted into hiding. The others did not hear her. They had crowded round Wendy, and as they looked a terrible silence fell upon the wood. If Wendy's heart had been beating they would all have heard it.",
           "Slightly was the first to speak. 'This is no bird,' he said in a scared voice. 'I think it must be a lady.'",
@@ -755,7 +744,7 @@
         "chapterNumber": "CHAPTER VII",
         "chapterName": "THE HOME UNDER THE GROUND",
         "text": [
-            "One of the first things Peter did next day was to measure Wendy and John and Michael for hollow trees. Hook, you remember, had sneered at the boys for thinking they needed a tree apiece, but this was ignorance, for unless your tree fitted you it was difficult to go up and down, and no two of the boys were quite the same size. Once you fitted, you drew in your breath at the top, and down you went at exactly the right speed, while to ascend you drew in and let out alternately, and so wriggled up. Of course, when you have mastered the action you are able to do these things without thinking of them, and then nothing can be more graceful.",
+          "One of the first things Peter did next day was to measure Wendy and John and Michael for hollow trees. Hook, you remember, had sneered at the boys for thinking they needed a tree apiece, but this was ignorance, for unless your tree fitted you it was difficult to go up and down, and no two of the boys were quite the same size. Once you fitted, you drew in your breath at the top, and down you went at exactly the right speed, while to ascend you drew in and let out alternately, and so wriggled up. Of course, when you have mastered the action you are able to do these things without thinking of them, and then nothing can be more graceful.",
           "But you simply must fit, and Peter measures you for your tree as carefully as for a suit of clothes: the only difference being that the clothes are made to fit you, while you have to be made to fit the tree. Usually it is done quite easily, as by your wearing too many garments or too few; but if you are bumpy in awkward places or the only available tree is an odd shape, Peter does some things to you, and after that you fit. Once you fit, great care must be taken to go on fitting, and this, as Wendy was to discover to her delight, keeps a whole family in perfect condition.",
           "Wendy and Michael fitted their trees at the first try, but John had to be altered a little.",
           "After a few days' practice they could go up and down as gaily as buckets in a well. And how ardently they grew to love their home under the ground; especially Wendy. It consisted of one large room, as all houses should do, with a floor in which you could dig if you wanted to go fishing, and in this floor grew stout mushrooms of a charming colour, which were used as stools. A Never tree tried hard to grow in the centre of the room, but every morning they sawed the trunk through, level with the floor. By tea-time it was always about two feet high, and then they put a door on top of it, the whole thus becoming a table; as soon as they cleared away, they sawed off the trunk again, and thus there was more room to play. There was an enormous fireplace which was in almost any part of the room where you cared to light it, and across this Wendy stretched strings, made of fibre, from which she suspended her washing. The bed was tilted against the wall by day, and let down at 6.30, when it filled nearly half the room; and all the boys except Michael slept in it, lying like sardines in a tin. There was a strict rule against turning round until one gave the signal, when all turned at once. Michael should have used it also; but Wendy would have a baby, and he was the littlest, and you know what women are, and the short and the long of it is that he was hung up in a basket.",
@@ -782,7 +771,7 @@
         "chapterNumber": "CHAPTER VIII",
         "chapterName": "THE MERMAIDS' LAGOON",
         "text": [
-            "If you shut your eyes and are a lucky one, you may see at times a shapeless pool of lovely pale colours suspended in the darkness; then if you squeeze your eyes tighter, the pool begins to take shape, and the colours become so vivid that with another squeeze they must go on fire. But just before they go on fire you see the lagoon. This is the nearest you ever get to it on the mainland, just one heavenly moment; if there could be two moments you might see the surf and hear the mermaids singing.",
+          "If you shut your eyes and are a lucky one, you may see at times a shapeless pool of lovely pale colours suspended in the darkness; then if you squeeze your eyes tighter, the pool begins to take shape, and the colours become so vivid that with another squeeze they must go on fire. But just before they go on fire you see the lagoon. This is the nearest you ever get to it on the mainland, just one heavenly moment; if there could be two moments you might see the surf and hear the mermaids singing.",
           "The children often spent long summer days on this lagoon, swimming or floating most of the time, playing the mermaid games in the water, and so forth. You must not think from this that the mermaids were on friendly terms with them; on the contrary, it was among Wendy's lasting regrets that all the time she was on the island she never had a civil word from one of them. When she stole softly to the edge of the lagoon she might see them by the score, especially on Marooners' Rock, where they loved to bask, combing out their hair in a lazy way that quite irritated her; or she might even swim, on tiptoe as it were, to within a yard of them, but then they saw her and dived, probably splashing her with their tails, not by accident, but intentionally.",
           "!IMG i148.jpg",
           "They treated all the boys in the same way, except of course Peter, who chatted with them on Marooners' Rock by the hour, and sat on their tails when they got cheeky. He gave Wendy one of their combs.",
@@ -954,7 +943,7 @@
         "chapterNumber": "CHAPTER IX",
         "chapterName": "THE NEVER BIRD",
         "text": [
-            "The last sounds Peter heard before he was quite alone were the mermaids retiring one by one to their bedchambers under the sea. He was too far away to hear their doors shut; but every door in the coral caves where they live rings a tiny bell when it opens or closes (as in all the nicest houses on the mainland), and he heard the bells.",
+          "The last sounds Peter heard before he was quite alone were the mermaids retiring one by one to their bedchambers under the sea. He was too far away to hear their doors shut; but every door in the coral caves where they live rings a tiny bell when it opens or closes (as in all the nicest houses on the mainland), and he heard the bells.",
           "Steadily the waters rose till they were nibbling at his feet; and to pass the time until they made their final gulp, he watched the only thing moving on the lagoon. He thought it was a piece of floating paper, perhaps part of the kite, and wondered idly how long it would take to drift ashore.",
           "Presently he noticed as an odd thing that it was undoubtedly out upon the lagoon with some definite purpose, for it was fighting the tide, and sometimes winning; and when it won, Peter, always sympathetic to the weaker side, could not help clapping; it was such a gallant piece of paper.",
           "It was not really a piece of paper; it was the Never bird, making desperate efforts to reach Peter on her nest. By working her wings, in a way she had learned since the nest fell into the water, she was able to some extent to guide her strange craft, but by the time Peter recognised her she was very exhausted. She had come to save him, to give him her nest, though there were eggs in it. I rather wonder at the bird, for though he had been nice to her, he had also sometimes tormented her. I can suppose only that, like Mrs. Darling and the rest of them, she was melted because he had all his first teeth.",
@@ -984,7 +973,7 @@
         "chapterNumber": "CHAPTER X",
         "chapterName": "THE HAPPY HOME",
         "text": [
-            "One important result of the brush on the lagoon was that it made the redskins their friends. Peter had saved Tiger Lily from a dreadful fate, and now there was nothing she and her braves would not do for him. All night they sat above, keeping watch over the home under the ground and awaiting the big attack by the pirates which obviously could not be much longer delayed. Even by day they hung about, smoking the pipe of peace, and looking almost as if they wanted tit-bits to eat.",
+          "One important result of the brush on the lagoon was that it made the redskins their friends. Peter had saved Tiger Lily from a dreadful fate, and now there was nothing she and her braves would not do for him. All night they sat above, keeping watch over the home under the ground and awaiting the big attack by the pirates which obviously could not be much longer delayed. Even by day they hung about, smoking the pipe of peace, and looking almost as if they wanted tit-bits to eat.",
           "They called Peter the Great White Father, prostrating themselves before him; and he liked this tremendously, so that it was not really good for him.",
           "'The great white father,' he would say to them in a very lordly manner, as they grovelled at his feet, 'is glad to see the Piccaninny warriors protecting his wigwam from the pirates.'",
           "'Me Tiger Lily,' that lovely creature would reply. 'Peter Pan save me, me his velly nice friend. Me no let pirates hurt him.'",
@@ -1089,7 +1078,7 @@
         "chapterNumber": "CHAPTER XI",
         "chapterName": "WENDY'S STORY",
         "text": [
-            "'Listen, then,' said Wendy, settling down to her story, with Michael at her feet and seven boys in the bed. 'There was once a gentleman——'",
+          "'Listen, then,' said Wendy, settling down to her story, with Michael at her feet and seven boys in the bed. 'There was once a gentleman——'",
           "'I had rather he had been a lady,' Curly said.",
           "'I wish he had been a white rat,' said Nibs.",
           "'Quiet,' their mother admonished them. 'There was a lady also, and——'",
@@ -1224,7 +1213,7 @@
         "chapterNumber": "CHAPTER XII",
         "chapterName": "THE CHILDREN ARE CARRIED OFF",
         "text": [
-            "The pirate attack had been a complete surprise: a sure proof that the unscrupulous Hook had conducted it improperly, for to surprise redskins fairly is beyond the wit of the white man.",
+          "The pirate attack had been a complete surprise: a sure proof that the unscrupulous Hook had conducted it improperly, for to surprise redskins fairly is beyond the wit of the white man.",
           "By all the unwritten laws of savage warfare it is always the redskin who attacks, and with the wiliness of his race he does it just before the dawn, at which time he knows the courage of the whites to be at its lowest ebb. The white men have in the meantime made a rude stockade on the summit of yonder undulating ground, at the foot of which a stream runs; for it is destruction to be too far from water. There they await the onslaught, the inexperienced ones clutching their revolvers and treading on twigs, but the old hands sleeping tranquilly until just before the dawn. Through the long black night the savage scouts wriggle, snake-like, among the grass without stirring a blade. The brushwood closes behind them as silently as sand into which a mole has dived. Not a sound is to be heard, save when they give vent to a wonderful imitation of the lonely call of the coyote. The cry is answered by other braves; and some of them do it even better than the coyotes, who are not very good at it. So the chill hours wear on, and the long suspense is horribly trying to the paleface who has to live through it for the first time; but to the trained hand those ghastly calls and still ghastlier silences are but an intimation of how the night is marching.",
           "That this was the usual procedure was so well known to Hook that in disregarding it he cannot be excused on the plea of ignorance.",
           "The Piccaninnies, on their part, trusted implicitly to his honour, and their whole action of the night stands out in marked contrast to his. They left nothing undone that was consistent with the reputation of their tribe. With that alertness of the senses which is at once the marvel and despair of civilised peoples, they knew that the pirates were on the island from the moment one of them trod on a dry stick; and in an incredibly short space of time the coyote cries began. Every foot of ground between the spot where Hook had landed his forces and the home under the trees was stealthily examined by braves wearing their mocassins with the heels in front. They found only one hillock with a stream at its base, so that Hook had no choice; here he must establish himself and wait for just before the dawn. Everything being thus mapped out with almost diabolical cunning, the main body of the redskins folded their blankets around them, and in the phlegmatic manner that is to them the pearl of manhood squatted above the children's home, awaiting the cold moment when they should deal pale death.",
@@ -1251,7 +1240,7 @@
         "chapterNumber": "CHAPTER XIII",
         "chapterName": "DO YOU BELIEVE IN FAIRIES?",
         "text": [
-            "The more quickly this horror is disposed of the better. The first to emerge from his tree was Curly. He rose out of it into the arms of Cecco, who flung him to Smee, who flung him to Starkey, who flung him to Bill Jukes, who flung him to Noodler, and so he was tossed from one to another till he fell at the feet of the black pirate. All the boys were plucked from their trees in this ruthless manner; and several of them were in the air at a time, like bales of goods flung from hand to hand.",
+          "The more quickly this horror is disposed of the better. The first to emerge from his tree was Curly. He rose out of it into the arms of Cecco, who flung him to Smee, who flung him to Starkey, who flung him to Bill Jukes, who flung him to Noodler, and so he was tossed from one to another till he fell at the feet of the black pirate. All the boys were plucked from their trees in this ruthless manner; and several of them were in the air at a time, like bales of goods flung from hand to hand.",
           "!IMG i218.jpg",
           "A different treatment was accorded to Wendy, who came last. With ironical politeness Hook raised his hat to her, and, offering her his arm, escorted her to the spot where the others were being gagged. He did it with such an air, he was so frightfully <i>distingué<i/>, that she was too fascinated to cry out. She was only a little girl.",
           "Perhaps it is tell-tale to divulge that for a moment Hook entranced her, and we tell on her only because her slip led to strange results. Had she haughtily unhanded him (and we should have loved to write it of her), she would have been hurled through the air like the others, and then Hook would probably not have been present at the tying of the children; and had he not been at the tying he would not have discovered Slightly's secret, and without the secret he could not presently have made his foul attempt on Peter's life.",
@@ -1327,7 +1316,7 @@
         "chapterNumber": "CHAPTER XIV",
         "chapterName": "THE PIRATE SHIP",
         "text": [
-            "One green light squinting over Kidd's Creek, which is near the mouth of the pirate river, marked where the brig, the <i>Jolly Roger</i>, lay, low in the water; a rakish-looking craft foul to the hull, every beam in her detestable like ground strewn with mangled feathers. She was the cannibal of the seas, and scarce needed that watchful eye, for she floated immune in the horror of her name.",
+          "One green light squinting over Kidd's Creek, which is near the mouth of the pirate river, marked where the brig, the <i>Jolly Roger</i>, lay, low in the water; a rakish-looking craft foul to the hull, every beam in her detestable like ground strewn with mangled feathers. She was the cannibal of the seas, and scarce needed that watchful eye, for she floated immune in the horror of her name.",
           "She was wrapped in the blanket of night, through which no sound from her could have reached the shore. There was little sound, and none agreeable save the whir of the ship's sewing machine at which Smee sat, ever industrious and obliging, the essence of the commonplace, pathetic Smee. I know not why he was so infinitely pathetic, unless it were because he was so pathetically unaware of it; but even strong men had to turn hastily from looking at him, and more than once on summer evenings he had touched the fount of Hook's tears and made it flow. Of this, as of almost everything else, Smee was quite unconscious.",
           "A few of the pirates leant over the bulwarks drinking in the miasma of the night; others sprawled by barrels over games of dice and cards; and the exhausted four who had carried the little house lay prone on the deck, where even in their sleep they rolled skilfully to this side or that out of Hook's reach, lest he should claw them mechanically in passing.",
           "Hook trod the deck in thought. O man unfathomable. It was his hour of triumph. Peter had been removed for ever from his path, and all the other boys were on the brig, about to walk the plank. It was his grimmest deed since the days when he had brought Barbecue to heel; and knowing as we do how vain a tabernacle is man, could we be surprised had he now paced the deck unsteadily, bellied out by the winds of his success?",
@@ -1411,7 +1400,7 @@
         "chapterNumber": "CHAPTER XV",
         "chapterName": "'HOOK OR ME THIS TIME'",
         "text": [
-            "Odd things happen to all of us on our way through life without our noticing for a time that they have happened. Thus, to take an instance, we suddenly discover that we have been deaf in one ear for we don't know how long, but, say, half an hour. Now such an experience had come that night to Peter. When last we saw him he was stealing across the island with one finger to his lips and his dagger at the ready. He had seen the crocodile pass by without noticing anything peculiar about it, but by and by he remembered that it had not been ticking. At first he thought this eerie, but soon he concluded rightly that the clock had run down.",
+          "Odd things happen to all of us on our way through life without our noticing for a time that they have happened. Thus, to take an instance, we suddenly discover that we have been deaf in one ear for we don't know how long, but, say, half an hour. Now such an experience had come that night to Peter. When last we saw him he was stealing across the island with one finger to his lips and his dagger at the ready. He had seen the crocodile pass by without noticing anything peculiar about it, but by and by he remembered that it had not been ticking. At first he thought this eerie, but soon he concluded rightly that the clock had run down.",
           "Without giving a thought to what might be the feelings of a fellow-creature thus abruptly deprived of its closest companion, Peter at once considered how he could turn the catastrophe to his own use; and he decided to tick, so that wild beasts should believe he was the crocodile and let him pass unmolested. He ticked superbly, but with one unforeseen result. The crocodile was among those who heard the sound, and it followed him, though whether with the purpose of regaining what it had lost, or merely as a friend under the belief that it was again ticking itself, will never be certainly known, for, like all slaves to a fixed idea, it was a stupid beast.",
           "Peter reached the shore without mishap, and went straight on; his legs encountering the water as if quite unaware that they had entered a new element. Thus many animals pass from land to water, but no other human of whom I know. As he swam he had but one thought: 'Hook or me this time.' He had ticked so long that he now went on ticking without knowing that he was doing it. Had he known he would have stopped, for to board the brig by the help of the tick, though an ingenious idea, had not occurred to him.",
           "!IMG i228.jpg",
@@ -1519,7 +1508,7 @@
         "chapterNumber": "CHAPTER XVI",
         "chapterName": "THE RETURN HOME",
         "text": [
-            "By two bells that morning they were all stirring their stumps; for there was a big sea running; and Tootles, the bo'sun, was among them, with a rope's end in his hand and chewing tobacco. They all donned pirate clothes cut off at the knee, shaved smartly, and tumbled up, with the true nautical roll and hitching their trousers.",
+          "By two bells that morning they were all stirring their stumps; for there was a big sea running; and Tootles, the bo'sun, was among them, with a rope's end in his hand and chewing tobacco. They all donned pirate clothes cut off at the knee, shaved smartly, and tumbled up, with the true nautical roll and hitching their trousers.",
           "It need not be said who was the captain. Nibs and John were first and second mate. There was a woman aboard. The rest were tars before the mast, and lived in the fo'c'sle. Peter had already lashed himself to the wheel; but he piped all hands and delivered a short address to them; said he hoped they would do their duty like gallant hearties, but that he knew they were the scum of Rio and the Gold Coast, and if they snapped at him he would tear them. His bluff strident words struck the note sailors understand, and they cheered him lustily. Then a few sharp orders were given, and they turned the ship round, and nosed her for the mainland.",
           "Captain Pan calculated, after consulting the ship's chart, that if this weather lasted they should strike the Azores about the 21st of June, after which it would save time to fly.",
           "Some of them wanted it to be an honest ship and others were in favour of keeping it a pirate; but the captain treated them as dogs, and they dared not express their wishes to him even in a round robin. Instant obedience was the only safe thing. Slightly got a dozen for looking perplexed when told to take soundings. The general feeling was that Peter was honest just now to lull Wendy's suspicions, but that there might be a change when the new suit was ready, which, against her will, she was making for him out of some of Hook's wickedest garments. It was afterwards whispered among them that on the first night he wore this suit he sat long in the cabin with Hook's cigar-holder in his mouth and one hand clenched, all but the forefinger, which he bent and held threateningly aloft like a hook.",
@@ -1606,7 +1595,7 @@
         "chapterNumber": "CHAPTER XVII",
         "chapterName": "WHEN WENDY GREW UP",
         "text": [
-            "I hope you want to know what became of the other boys. They were waiting below to give Wendy time to explain about them; and when they had counted five hundred they went up. They went up by the stair, because they thought this would make a better impression. They stood in a row in front of Mrs. Darling, with their hats off, and wishing they were not wearing their pirate clothes. They said nothing, but their eyes asked her to have them. They ought to have looked at Mr. Darling also, but they forgot about him.",
+          "I hope you want to know what became of the other boys. They were waiting below to give Wendy time to explain about them; and when they had counted five hundred they went up. They went up by the stair, because they thought this would make a better impression. They stood in a row in front of Mrs. Darling, with their hats off, and wishing they were not wearing their pirate clothes. They said nothing, but their eyes asked her to have them. They ought to have looked at Mr. Darling also, but they forgot about him.",
           "Of course Mrs. Darling said at once that she would have them; but Mr. Darling was curiously depressed, and they saw that he considered six a rather large number.",
           "'I must say,' he said to Wendy, 'that you don't do things by halves,' a grudging remark which the twins thought was pointed at them.",
           "The first twin was the proud one, and he asked, flushing, 'Do you think we should be too much of a handful, sir? Because if so we can go away.'",
@@ -1779,4 +1768,4 @@
       }
     ]
   }
-}
+}z

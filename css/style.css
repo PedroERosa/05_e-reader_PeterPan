@@ -1,4 +1,15 @@
-/*MAIN STYLES CONFIGS ------------------------------------------------------------------------------------------------------------*/
+/*STRUCTURE ------------------------------------------------------------------------------------------------------------*/
+/*
+             888                              888                             
+             888                              888                             
+             888                              888                             
+    .d8888b  888888 888d888 888  888  .d8888b 888888 888  888 888d888 .d88b.  
+    88K      888    888P"   888  888 d88P"    888    888  888 888P"  d8P  Y8b 
+    "Y8888b. 888    888     888  888 888      888    888  888 888    88888888 
+         X88 Y88b.  888     Y88b 888 Y88b.    Y88b.  Y88b 888 888    Y8b.     
+     88888P'  "Y888 888      "Y88888  "Y8888P  "Y888  "Y88888 888     "Y8888  
+*/
+
 :root {
   --background-color: #343c27;
   --background-zero-color: #343c2700;
@@ -12,21 +23,16 @@
   --grey-50-color: #a7b7b780;
   
 }
-.color {
-  color: #343c27;
-  color: #918338;
-  color: #c16735;
-  color: #eac27d;
-  color: #a7b7b7;
-}
+
 body {
   font-family: 'Crimson Pro';
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
 
   background-color: var(--background-color);
   color: var(--text-color);
 
+  line-height: 1.5;
 }
 
 .wireframe {
@@ -34,8 +40,9 @@ body {
   flex-direction: row;
 
   height: 100vh;
-  overflow: hidden; /* Avoid unwanted scrollbars */
+  overflow: hidden;
 }
+
 
 .main {
   width: 100%;
@@ -53,16 +60,20 @@ body {
 }
 
 .main__content {
+
   margin: 50px auto auto;
   width: 85%;
   max-width: 1000px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+
+  padding-bottom: 150px;
 }
 
-.main__content__bottomspacer {
-  height: 150px;
-}
-
-img {
+.main__content img {
   height: 550px;
 
   margin: 30px auto;
@@ -70,49 +81,58 @@ img {
   display: block;
 }
 
-/*FONT STYLES ------------------------------------------------------------------------------------------------------------*/
-
+/*TEXT ------------------------------------------------------------------------------------------------------------*/
+/*
+    888                     888    
+    888                     888    
+    888                     888    
+    888888 .d88b.  888  888 888888 
+    888   d8P  Y8b `Y8bd8P' 888    
+    888   88888888   X88K   888    
+    Y88b. Y8b.     .d8""8b. Y88b.  
+    "Y888 "Y8888  888  888  "Y888 
+*/
 h1 {
-  margin-bottom: 20px;
+  font-family: 'Maragsa';
+  font-weight: 400;
+  font-size: 3em;
 
   text-align: center;
 }
 
-.main__content__bookname {
-  font-weight: 900;
-  font-size: 40px;
-}
-
-h2, h3 {
-  margin-bottom: 20px;
-}
-
-p {
-  margin-bottom: 15px;
-}
-
-.main__content__author {
+h2{
   font-weight: 200;
-  font-size: 40px;
+  font-size: 2em;
+
+  text-align: center;
 }
 
-.main__content__chapter {
+h3 {
   font-weight: 800;
-  font-size: 26px;
+  font-size: 1.4em;
 }
 
-.main__content__chaptername {
+h4 {
   font-weight: 600;
-  font-size: 24px;    
+  font-size: 1.2em;    
 }
 
-.main__content__paragraph {
-  font-weight: 300;
+i, em {
+  font-style: italic;
 }
 
 
-/*SIDEBAR STYLES ------------------------------------------------------------------------------------------------------------*/
-
+/*SIDEBAR ------------------------------------------------------------------------------------------------------------*/
+/*
+            d8b      888          888                       
+            Y8P      888          888                       
+                      888          888                       
+    .d8888b  888  .d88888  .d88b.  88888b.   8888b.  888d888 
+    88K      888 d88" 888 d8P  Y8b 888 "88b     "88b 888P"   
+    "Y8888b. 888 888  888 88888888 888  888 .d888888 888     
+         X88 888 Y88b 888 Y8b.     888 d88P 888  888 888     
+     88888P' 888  "Y88888  "Y8888  88888P"  "Y888888 888     
+*/
 /* The sidebar menu */
 .sidenav {
   height: 100vh; /* 100% Full-height */
@@ -120,38 +140,60 @@ p {
   width: 0; /* 0 width - change this with JavaScript */
 
   background-color: var(--navigation-color);
-  overflow: hidden; /* Disable horizontal scroll */
   transition: 0.5s ease-in-out; /* 0.5 second transition effect to slide in the sidebar */
+  overflow-y: scroll;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 5px;
+  padding: 70px 0px;
+  
+  flex-shrink: 0;
+
+  position: relative;
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  z-index: 1;
+}
+
+.sidenav::-webkit-scrollbar {
+  display: none;
 }
   
 /* The sidebar buttons */
-.sidenav button {
-  font-family: 'Crimson Pro';
+.sidenav .sidenav__chapterbtn {
   font-weight: 400;
-  font-size: 16px;
   text-decoration: none;
 
-  margin: 5px 0;
-  padding: 5px;
-  width: 100%;
+  margin: 0;
+  padding: 7px;
+  width: 300px;
 
   background-color: #00000000;
   color: var(--navigation-text-color);
   display: block;
   transition: 0.2s;
   border-radius: 4px;
-  border-color: var(--grey-50-color);
+  border: 0;
+  outline: 0;
 }
   
 /* When you mouse over the navigation links, change their color */
 .sidenav button:hover {
   color: #ffffff;
-  border-color: #ffffff80;
+  background-color: #ffffff10;
 
 }
   
 /* The button used to open the sidebar */
-.openbtn {
+.sidenav__openbtn {
+  width: 50px;
+  height: 50px;
+
   font-size: 20px;
   cursor: pointer;
   background-color: var(--navigation-color);
@@ -159,12 +201,19 @@ p {
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
-  margin-top: 10px;
-  margin-bottom: auto;
+
+  z-index: 2;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
   
-.openbtn:hover {
-  background-color: #444;
+.sidenav__openbtn:hover {
+  color: white;
+  filter: brightness(150%);
+
+  box-shadow: 0 0 5px #00000080;
 }
   
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -173,13 +222,21 @@ p {
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+@media screen and (max-width: 1000px) {
+  .sidebar {z-index: 2;}
 } 
 
 /*FOOTER ------------------------------------------------------------------------------------------------------------------*/
-
+/*
+     .d888                  888                         
+    d88P"                   888                         
+    888                     888                         
+    888888 .d88b.   .d88b.  888888 .d88b.  888d888      
+    888   d88""88b d88""88b 888   d8P  Y8b 888P"        
+    888   888  888 888  888 888   88888888 888          
+    888   Y88..88P Y88..88P Y88b. Y8b.     888          
+    888    "Y88P"   "Y88P"   "Y888 "Y8888  888          
+*/
 .wrapper__main {
   width: 100%;
   position: relative;
@@ -201,13 +258,6 @@ p {
   background-color: var(--background-color);
   background: linear-gradient(0deg, var(--background-color) 75%,
                                     var(--background-zero-color) 100%);
-
-  /*background: linear-gradient(0deg, rgba(24,34,6,1) 70%,
-                                    rgba(24,34,6,0.8547619731486344) 80%,
-                                    rgba(24,34,6,0.6502801804315477) 90%,
-                                    rgba(24,34,6,0.2497199563419118) 95%,
-                                    rgba(24,34,6,0) 100%);
-  */
 }
 
 .footer__elements {
@@ -243,31 +293,40 @@ p {
   transition: 0.3s ease-in-out;
 }
 
+.footer__elements__button__container {
+  width: 100%;
+
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footer__elements__button {
   font-family: 'Crimson Pro';
   font-weight: 400;
   font-size: 18px;
   text-decoration: none;
 
+  min-height: 60px;
+
   margin: 5px 0;
   padding: 5px;
   width: 200px;
-
-  display: none;
 
   background-color: var(--background-color);
   color: var(--navigation-text-color);
 
   transition: 0.2s;
   border-radius: 4px;
-  border-color: var(--grey-50-color);
+  border: 0;
 
-  box-shadow: 0 0 5px #00000080;
+  box-shadow: 0 0 4px #00000080;
 }
 
 .footer__elements__button:hover {
-  color: white;
-  border-color: var(--grey-color);
+  color: #ffffff;
+  background-color: #ffffff10;
 
-  box-shadow: 0 0 5px #00000000;
+  box-shadow: 0 0 6px #00000080;
 }
