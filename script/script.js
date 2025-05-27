@@ -1,4 +1,11 @@
-const mainContent = document.querySelector(".main__content");
+const main = document.querySelector('.main');
+
+const mainContent = document.querySelector('.main__content');
+
+const footerElementsFillbar = document.querySelector('.footer__elements__fillbar');
+const footerElementsPbar = document.querySelector('.footer__elements__pbar');
+const footerElementsButtons = document.querySelector('.footer__elements__button__container');
+
 const sideNav = document.querySelector(".sidenav");
 const buttonContainter = document.querySelector(".footer__elements__button__container");
 
@@ -20,92 +27,92 @@ function toggleNav() {
   }
 }
 
-async function book() {
-  const search = await fetch(
-    "https://raw.githubusercontent.com/PedroERosa/05_e-reader_PeterPan/refs/heads/main/content/PeterAndWendy_JMBarrie.json"
-  );
-  const content = await search.json();
+const book = {
 
-  function createNav() {
-    for (let i = 0 ; i < content.book.chapter.length ; i++) {
-      sideNav.innerHTML += `<button onclick='book.createChapter(${i})'>${content.book.chapter[i].chapterNumber} - ${content.book.chapter[i].chapterName}</button>`;
+  content: null,
+
+  async fetchBook() {
+    const search = await fetch(
+      "https://raw.githubusercontent.com/PedroERosa/05_e-reader_PeterPan/refs/heads/main/content/PeterAndWendy_JMBarrie.json"
+    );
+
+    this.content = await search.json();
+
+    this.createNav();
+    this.createIntro();
+  },
+
+  createNav() {
+    sideNav.innerHTML = null;
+
+    sideNav.innerHTML += `<button class="sidenav__chapterbtn" onclick='book.createIntro()'>HOME</button>`;
+
+    for (let i = 0 ; i < this.content.book.chapter.length ; i++) {
+      sideNav.innerHTML += `<button class="sidenav__chapterbtn" onclick='book.createChapter(${i})'>${this.content.book.chapter[i].chapterNumber} - ${this.content.book.chapter[i].chapterName}</button>`;
     }
-  }
+  },
 
-  function createIntro() {
+  createIntro() {
     mainContent.innerHTML = null;
 
-    containerVideos.innerHTML += `<h1>${content.book.bookTitle}</h1>`;
-    containerVideos.innerHTML += `<h2>${content.author}</h2>`;
+     mainContent.innerHTML += `<h1>${this.content.book.bookTitle}</h1>`;
+     mainContent.innerHTML += `<h2>${this.content.book.author}</h2>`;
 
-    content.book.intro.forEach((paragraph) => {
+    this.content.book.intro.forEach((paragraph) => {this.writeParagraphs(paragraph)});
 
-      //checa se o paragrafo é imagem, poema/música, subtítulo ou texto normal.
-      switch (paragraph.substring(0, 4)) {
-        case "!IMG":
-          containerVideos.innerHTML += `<img src="./images/${paragraph.substring(5)}" alt="">`;
-          break;
-        case "!SNG":
-          containerVideos.innerHTML += `<p class="song">${paragraph}</p>`;
-          break;
-        case "!SBT":
-          containerVideos.innerHTML += `<h5>${paragraph}</h5>`;
-          break;
-        default:
-          containerVideos.innerHTML += `<p>${paragraph}</p>`;
-          break;
-      };
+    this.content.book.chapter.forEach((chapter) => {
+      mainContent.innerHTML += `<h3>${chapter.chapterNumber}</h3>`;
+      mainContent.innerHTML += `<h4>${chapter.chapterName}</h4>`;
+   });
 
-      content.book.chapter.forEach((chapter) => {
-        containerVideos.innerHTML += `<h3>${chapter.chapterNumber}</h3>`;
-        containerVideos.innerHTML += `<h4>${chapter.chapterName}</h4>`;
-      });
-    });
-  };
+   buttonContainter.innerHTML = null;
 
-  function createChapter(chapterNumber) {
+   buttonContainter.innerHTML += `<button class='footer__elements__button' onclick='book.createChapter(0)'>${this.content.book.chapter[0].chapterNumber} - ${this.content.book.chapter[0].chapterName}</button>`;
+  },
+
+  createChapter (chapterNumber) {
 
     mainContent.innerHTML = null;
 
-    containerVideos.innerHTML += `<h3>${content.book.chapter[chapterNumber].chapterNumber}</h3>`;
-    containerVideos.innerHTML += `<h4>${content.book.chapter[chapterNumber].chapterName}</h4>`;
-    content.book.chapter[chapterNumber].text.forEach((paragraph) => {
-
-      //checa se o paragrafo é imagem, poema/música, subtítulo ou texto normal.
-      if (paragraph.substring(0, 4) == "!IMG") {
-        containerVideos.innerHTML += `<img src="./images/${paragraph.substring(5)}" alt="">`;
-      } else if (paragraph.substring(0, 4) == "!SNG") {
-        containerVideos.innerHTML += `<p class="song">${paragraph}</p>`;
-      } else if (paragraph.substring(0, 4) == "!SBT") {
-        containerVideos.innerHTML += `<h5>${paragraph}</h5>`;
-      } else {
-        containerVideos.innerHTML += `<p>${paragraph}</p>`;
-      }
-    });
+    mainContent.innerHTML += `<h3>${this.content.book.chapter[chapterNumber].chapterNumber}</h3>`;
+    mainContent.innerHTML += `<h4>${this.content.book.chapter[chapterNumber].chapterName}</h4>`;
+    this.content.book.chapter[chapterNumber].text.forEach((paragraph) => {this.writeParagraphs(paragraph)});
 
     buttonContainter.innerHTML = null;
 
-    buttonContainter.innerHTML += "<button class='footer__elements__button'>HOME</button>";
+    buttonContainter.innerHTML += "<button class='footer__elements__button' onclick='book.createIntro()'>HOME</button>";
 
-    if (chapterNumber < content.book.chapter.lenght) {
-        buttonContainter.innerHTML += `<button class='footer__elements__button' onclick='book.createChapter(${chapterNumber + 1})'>${content.book.chapter[chapterNumber + 1].chapterNumber} - ${content.book.chapter[chapterNumber + 1].chapterName}</button>`;
+    if (chapterNumber < this.content.book.chapter.length) {
+        buttonContainter.innerHTML += `<button class='footer__elements__button' onclick='book.createChapter(${chapterNumber + 1})'>${this.content.book.chapter[chapterNumber + 1].chapterNumber} - ${this.content.book.chapter[chapterNumber + 1].chapterName}</button>`;
     }
     
+    main.scrollTop = 0;
+    handleScroll ();
+  },
+
+  writeParagraphs (p) {
+    //checa se o paragrafo é imagem, poema/música, subtítulo ou texto normal.
+    if (p.substring(0, 4) == "!IMG") {
+      mainContent.innerHTML += `<img src="./images/${p.substring(5)}" alt="">`;
+   } else if (p.substring(0, 4) == "!SNG") {
+      mainContent.innerHTML += `<p class="song">${p.substring(5)}</p>`;
+   } else if (p.substring(0, 4) == "!SBT") {
+      mainContent.innerHTML += `<h5>${p.substring(5)}</h5>`;
+   } else {
+      mainContent.innerHTML += `<p>${p}</p>`;
+   }
   }
-};
+
+}
 
 window.onload= mainFunction();
 
 function mainFunction () {
   //Get scroll percentage of div
 
-  const main = document.querySelector('.main');
-
-  const mainContent = document.querySelector('.main__content');
-
-  const footerElementsFillbar = document.querySelector('.footer__elements__fillbar');
-  const footerElementsPbar = document.querySelector('.footer__elements__pbar');
-  const footerElementsButtons = document.querySelector('.footer__elements__button__container');
+  book.fetchBook();
+  //book.createNav();
+  //book.createIntro();
 
   main.addEventListener("scroll", handleScroll);
 
@@ -141,44 +148,3 @@ function mainFunction () {
     }
   }
 };
-
-/*
-$(document).ready(function () {
-
-  //Get scroll percentage of div
-  $(".main").on("scroll", function () {
-    const scrollDistance = $(".main").scrollTop();
-    const  contentHeight = $(".main__content").height();
-    const  windowHeight = $(window).height();
-
-    var scrollPercent = (scrollDistance / (contentHeight + 200 - windowHeight)) * 100;
-
-    console.clear();
-    
-    console.log('scrollDistance ' + scrollDistance);
-    console.log('contentHeight ' + contentHeight);
-    console.log('windowHeight ' + windowHeight);
-
-    console.log(scrollPercent);
-
-    $(".footer__elements__fillbar").css("width", `${scrollPercent}%`);
-
-    if (scrollPercent == 100) {
-
-      $(".footer__elements__pbar").css("display", "none");
-      $(".footer__elements__button").css("display", "block");
-    } else {
-
-      $(".footer__elements__button").css("display", "none");
-      $(".footer__elements__pbar").css("display", "block");
-    }
-
-    if (scrollPercent == 0) {
-      $(".footer__elements__pbar").css("display", "none");
-    } else if (scrollPercent < 100) {
-      $(".footer__elements__pbar").css("display", "block");
-    }
-  });
-
-});
-*/
