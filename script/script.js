@@ -55,19 +55,21 @@ const book = {
   createIntro() {
     mainContent.innerHTML = null;
 
-     mainContent.innerHTML += `<h1>${this.content.book.bookTitle}</h1>`;
-     mainContent.innerHTML += `<h2>${this.content.book.author}</h2>`;
+    mainContent.innerHTML += `<div class="title__container">
+                              <h1>${this.content.book.bookTitle}</h1>
+                              <h2>${this.content.book.author}</h2>
+                              </div>`;
 
     this.content.book.intro.forEach((paragraph) => {this.writeParagraphs(paragraph)});
 
-    this.content.book.chapter.forEach((chapter) => {
-      mainContent.innerHTML += `<h3>${chapter.chapterNumber}</h3>`;
-      mainContent.innerHTML += `<h4>${chapter.chapterName}</h4>`;
+    this.content.book.chapter.forEach((chapter, i) => {
+      mainContent.innerHTML += `<h3 class="contents__element" onclick='book.createChapter(${i})'>${chapter.chapterNumber}</h3>`;
+      mainContent.innerHTML += `<h4 class="contents__element" onclick='book.createChapter(${i})'>${chapter.chapterName}</h4>`;
    });
 
    buttonContainter.innerHTML = null;
 
-   buttonContainter.innerHTML += `<button class='footer__elements__button' onclick='book.createChapter(0)'>${this.content.book.chapter[0].chapterNumber} - ${this.content.book.chapter[0].chapterName}</button>`;
+   buttonContainter.innerHTML += `<div></div><button class='footer__elements__button' onclick='book.createChapter(0)'>${this.content.book.chapter[0].chapterNumber} - ${this.content.book.chapter[0].chapterName}</button>`;
   },
 
   createChapter (chapterNumber) {
@@ -93,7 +95,7 @@ const book = {
   writeParagraphs (p) {
     //checa se o paragrafo é imagem, poema/música, subtítulo ou texto normal.
     if (p.substring(0, 4) == "!IMG") {
-      mainContent.innerHTML += `<img src="./images/${p.substring(5)}" alt="">`;
+      mainContent.innerHTML += `<img src="./images/${p.substring(5)}" alt="" draggable="false">`;
    } else if (p.substring(0, 4) == "!SNG") {
       mainContent.innerHTML += `<p class="song">${p.substring(5)}</p>`;
    } else if (p.substring(0, 4) == "!SBT") {
@@ -105,46 +107,47 @@ const book = {
 
 }
 
-window.onload= mainFunction();
-
-function mainFunction () {
-  //Get scroll percentage of div
-
-  book.fetchBook();
-  //book.createNav();
-  //book.createIntro();
-
-  main.addEventListener("scroll", handleScroll);
-
-  function handleScroll () {
+function handleScroll () {
     const scrollDistance = main.scrollTop;
     const contentHeight = mainContent.offsetHeight;
     const windowHeight = window.innerHeight;
 
     var scrollPercent = Math.round((scrollDistance / (contentHeight - windowHeight)) * 100);
+    if (scrollPercent > 100 ) {scrollPercent = 100};
 
-    console.clear();
+    //console.clear();
     
-    console.log('scrollDistance ' + scrollDistance);
-    console.log('contentHeight ' + contentHeight);
-    console.log('windowHeight ' + windowHeight);
+    //console.log('scrollDistance ' + scrollDistance);
+    //console.log('contentHeight ' + contentHeight);
+    //console.log('windowHeight ' + windowHeight);
 
-    console.log(scrollPercent);
+    //console.log(scrollPercent);
 
     footerElementsFillbar.style.width = `${scrollPercent}%`;
 
     if (scrollPercent >= 100) {
-      footerElementsPbar.style.display = "none";
-      footerElementsButtons.style.display = "flex";
+      //mostrar botões
+      footerElementsButtons.classList.remove('hide');
+      footerElementsPbar.classList.add('hide');
     } else {
-      footerElementsButtons.style.display = "none";
-      footerElementsPbar.style.display = "block";
+      //Mostrar barra
+      footerElementsButtons.classList.add('hide');
+      footerElementsPbar.classList.remove('hide');
     }
     
     if (scrollPercent === 0) {
-      footerElementsPbar.style.display = "none";
-    } else if (scrollPercent < 100) {
-      footerElementsPbar.style.display = "block";
+      //Não mostrar nada
+        footerElementsButtons.classList.add('hide');
+        footerElementsPbar.classList.add('hide');
     }
   }
+
+window.onload= mainFunction();
+
+function mainFunction () {
+
+  book.fetchBook();
+
+  main.addEventListener("scroll", handleScroll);
+
 };

@@ -24,10 +24,15 @@
   
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Crimson Pro';
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
+  text-align: justify;
 
   background-color: var(--background-color);
   color: var(--text-color);
@@ -40,19 +45,21 @@ body {
   flex-direction: row;
 
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
 }
 
+.main__wrapper {
+  width: 100%;
+}
 
 .main {
   width: 100%;
-  height: 100vh;
+  height: calc(100% - 120px);
 
   overflow-y: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-
-  padding: 20px;
 }
 
 .main::-webkit-scrollbar {
@@ -61,7 +68,7 @@ body {
 
 .main__content {
 
-  margin: 50px auto auto;
+  margin: auto;
   width: 85%;
   max-width: 1000px;
 
@@ -70,16 +77,31 @@ body {
   justify-content: center;
   gap: 15px;
 
-  padding-bottom: 150px;
+  padding: 70px 0 50px;
 }
 
 .main__content img {
-  height: 550px;
+  max-height: 550px;
+  max-width: 100%;
+  object-fit: contain;
 
   margin: 30px auto;
 
   display: block;
 }
+
+.title__container {
+  width: 100%;
+  height: 100vh;
+
+  padding-bottom: 140px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /*TEXT ------------------------------------------------------------------------------------------------------------*/
 /*
@@ -95,32 +117,36 @@ body {
 h1 {
   font-family: 'Maragsa';
   font-weight: 400;
-  font-size: 3em;
+  font-size: 4em;
 
   text-align: center;
 }
 
 h2{
   font-weight: 200;
-  font-size: 2em;
+  font-size: 3em;
 
   text-align: center;
 }
 
 h3 {
   font-weight: 800;
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 h4 {
   font-weight: 600;
-  font-size: 1.2em;    
+  font-size: 1.4em;    
 }
 
 i, em {
   font-style: italic;
 }
 
+song {
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
 /*SIDEBAR ------------------------------------------------------------------------------------------------------------*/
 /*
@@ -135,7 +161,7 @@ i, em {
 */
 /* The sidebar menu */
 .sidenav {
-  height: 100vh; /* 100% Full-height */
+  height: 100%; /* 100% Full-height */
 
   width: 0; /* 0 width - change this with JavaScript */
 
@@ -157,7 +183,6 @@ i, em {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 
-  z-index: 1;
 }
 
 .sidenav::-webkit-scrollbar {
@@ -194,7 +219,7 @@ i, em {
   width: 50px;
   height: 50px;
 
-  font-size: 20px;
+  font-size: 1em;
   cursor: pointer;
   background-color: var(--navigation-color);
   color: var(--accent-color);
@@ -202,11 +227,13 @@ i, em {
   border: none;
   border-radius: 5px;
 
-  z-index: 2;
+  z-index: 3;
 
   position: absolute;
   top: 10px;
   left: 10px;
+
+  box-shadow: 0 0 2px #000000bd;
 }
   
 .sidenav__openbtn:hover {
@@ -215,16 +242,7 @@ i, em {
 
   box-shadow: 0 0 5px #00000080;
 }
-  
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s; /* If you want a transition effect */
-}
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-width: 1000px) {
-  .sidebar {z-index: 2;}
-} 
 
 /*FOOTER ------------------------------------------------------------------------------------------------------------------*/
 /*
@@ -237,20 +255,10 @@ i, em {
     888   Y88..88P Y88..88P Y88b. Y8b.     888          
     888    "Y88P"   "Y88P"   "Y888 "Y8888  888          
 */
-.wrapper__main {
-  width: 100%;
-  position: relative;
-}
-
 
 .footer {
   width: 100%;
-  height: 150px;
-
-  padding: 10px 20px 0;
-
-  position: absolute;
-  bottom: 0;
+  height: 120px;
 
   display: flex;
   align-items: center;
@@ -265,8 +273,8 @@ i, em {
   width: 85%;
   max-width: 1000px;
 
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  height: 100%;
 }
 
 .footer__elements__pbar {
@@ -277,9 +285,11 @@ i, em {
 
   background-color: var(--grey-50-color);
 
-  transition: 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 
-  display: none;
+  position: absolute;
+  top: 40px;
+  z-index: 0;
 }
 
 .footer__elements__fillbar {
@@ -296,19 +306,28 @@ i, em {
 .footer__elements__button__container {
   width: 100%;
 
-  display: none;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  transition: all 0.5s ease-in-out;
+
+  position: absolute;
+  top: 20px;
+  z-index: 1;
 }
 
 .footer__elements__button {
   font-family: 'Crimson Pro';
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1em;
   text-decoration: none;
 
   min-height: 60px;
+  max-height: 70px;
+
+  max-width: 48%;
 
   margin: 5px 0;
   padding: 5px;
@@ -329,4 +348,75 @@ i, em {
   background-color: #ffffff10;
 
   box-shadow: 0 0 6px #00000080;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/*RESPONSIVENESS ------------------------------------------------------------------------------------------------------------*/
+/*
+                           888      d8b 888          
+                           888      Y8P 888          
+                           888          888          
+    88888b.d88b.   .d88b.  88888b.  888 888  .d88b.  
+    888 "888 "88b d88""88b 888 "88b 888 888 d8P  Y8b 
+    888  888  888 888  888 888  888 888 888 88888888 
+    888  888  888 Y88..88P 888 d88P 888 888 Y8b.     
+    888  888  888  "Y88P"  88888P"  888 888  "Y8888 
+*/
+
+@media only screen and (max-width: 1000px) {
+  .sidenav{
+  z-index: 2;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  }
+}
+
+@media only screen and (max-width:700px) {
+  body {
+    font-size: 16px;
+  }
+
+  .main {
+    height: calc(100% - 80px);
+  }
+  .footer {
+  height: 80px;
+  }
+
+  .footer__elements__pbar {
+  top: 30px;
+}
+
+.footer__elements__button__container {
+  top: 5px;
+}
+}
+
+@media only screen and (max-height: 650px) {
+  body {
+    font-size: 16px;
+  }
+
+  .main {
+    height: calc(100% - 80px);
+  }
+  .footer {
+  height: 80px;
+  }
+
+  .footer__elements__pbar {
+  top: 30px;
+}
+
+.footer__elements__button__container {
+  top: 5px;
+}
 }
