@@ -140,9 +140,7 @@ function handleScroll () {
     }
   }
 
-window.onload= mainFunction();
-
-function mainFunction () {
+  function mainFunction () {
   openButton.addEventListener("click", toggleNav);
 
   book.fetchBook();
@@ -150,3 +148,6 @@ function mainFunction () {
   main.addEventListener("scroll", handleScroll);
 
 };
+
+  window.onload= mainFunction();
+
