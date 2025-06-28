@@ -105,6 +105,8 @@ const book = {
 
 }
 
+window.book = book;
+
 function handleScroll () {
     const scrollDistance = main.scrollTop;
     const contentHeight = mainContent.offsetHeight;
@@ -149,5 +151,5 @@ function handleScroll () {
 
 };
 
-  window.onload= mainFunction();
+window.addEventListener("load", mainFunction);
 
