@@ -84,10 +84,9 @@ const book = {
 
     buttonContainter.innerHTML += "<button class='footer__elements__button' onclick='book.createIntro()'>HOME</button>";
 
-    if (chapterNumber < this.content.book.chapter.length) {
+    if (chapterNumber < (this.content.book.chapter.length -1)) {
         buttonContainter.innerHTML += `<button class='footer__elements__button' onclick='book.createChapter(${chapterNumber + 1})'>${this.content.book.chapter[chapterNumber + 1].chapterNumber} - ${this.content.book.chapter[chapterNumber + 1].chapterName}</button>`;
     }
-    
     main.scrollTop = 0;
     handleScroll ();
   },
