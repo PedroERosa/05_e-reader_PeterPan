@@ -8,12 +8,11 @@ const footerElementsButtons = document.querySelector('.footer__elements__button_
 
 const sideNav = document.querySelector(".sidenav");
 const buttonContainter = document.querySelector(".footer__elements__button__container");
+const openButton = document.querySelector('.sidenav__openbtn');
 
 let isNavOpen = false;
 
 function toggleNav() {
-  let openButton = document.getElementsByClassName("sidenav__openbtn")[0];
-
   if (isNavOpen) {
     sideNav.style.width = "0";
     sideNav.style.padding = "70px 0px";
@@ -144,6 +143,7 @@ function handleScroll () {
 window.onload= mainFunction();
 
 function mainFunction () {
+  openButton.addEventListener("click", toggleNav);
 
   book.fetchBook();
 
