@@ -16,12 +16,12 @@ function toggleNav() {
   if (isNavOpen) {
     sideNav.style.width = "0";
     sideNav.style.padding = "70px 0px";
-    openButton.innerHTML = "🡢";
+    openButton.innerHTML = '<svg viewBox="0 0 100 100"><line class="sidenav__openbtn_icon" x1="76.47" y1="50" x2="18.36" y2="50"/><polyline class="sidenav__openbtn_icon" points="58.23 26.08 81.64 50 58.23 73.92"/></svg>';
     isNavOpen = false;
   } else {
     sideNav.style.width = "300px";
     sideNav.style.padding = "70px 5px";
-    openButton.innerHTML = "🡠";
+    openButton.innerHTML = '<svg viewBox="0 0 100 100"><line class="sidenav__openbtn_icon" x1="23.53" y1="50" x2="81.64" y2="50"/><polyline class="sidenav__openbtn_icon" points="41.77 26.08 18.36 50 41.77 73.92"/></svg>';
     isNavOpen = true;
   }
 }
