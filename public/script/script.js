@@ -93,7 +93,7 @@ const book = {
   writeParagraphs (p) {
     //checa se o paragrafo é imagem, poema/música, subtítulo ou texto normal.
     if (p.substring(0, 4) == "!IMG") {
-      mainContent.innerHTML += `<img src="./images/${p.substring(5)}" alt="" draggable="false">`;
+      mainContent.innerHTML += `<img src="./public/images/${p.substring(5)}" alt="" draggable="false">`;
    } else if (p.substring(0, 4) == "!SNG") {
       mainContent.innerHTML += `<p class="song">${p.substring(5)}</p>`;
    } else if (p.substring(0, 4) == "!SBT") {

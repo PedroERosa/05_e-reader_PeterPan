@@ -1,8 +1,5 @@
-import { defineConfig } from 'vite'
-
-export default defineConfig({
+export default {
   build: {
-    emptyOutDir: false,
-    minify: false,
-  }
-})
+       minify: false,
+     }
+}
