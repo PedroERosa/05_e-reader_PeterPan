@@ -115,14 +115,6 @@ function handleScroll () {
     var scrollPercent = Math.round((scrollDistance / (contentHeight - windowHeight)) * 100);
     if (scrollPercent > 100 ) {scrollPercent = 100};
 
-    //console.clear();
-    
-    //console.log('scrollDistance ' + scrollDistance);
-    //console.log('contentHeight ' + contentHeight);
-    //console.log('windowHeight ' + windowHeight);
-
-    //console.log(scrollPercent);
-
     footerElementsFillbar.style.width = `${scrollPercent}%`;
 
     if (scrollPercent >= 100) {
